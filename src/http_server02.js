@@ -3,7 +3,8 @@ const fs = require("fs");
 
 http.createServer((req, res) => {
     fs.writeFile(__dirname + "/Headers.json",
-        JSON.stringify(req.headers), (error) => {
+        JSON.stringify(req.headers),
+        (error) => {
             if (error) {
                 res.end(`error: ${error}`);
             } else {
