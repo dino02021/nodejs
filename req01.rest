@@ -1,0 +1,6 @@
+POST http://localhost:7878/form
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+
+a=666&b=777
+
+###
